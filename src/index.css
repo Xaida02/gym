@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Roboto:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", "sans-serif";
+  @apply text-gray-500;
+}
+/* The entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 9px;
+}
+
+/* The scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background-color: #fff3f3;
+}
+
+/* The draggable part of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #fe807c;
+  border-radius: 6px; /* Rounded corners */
+}
+
+/* Hover state for the draggable part */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fd8f8b;
+}
+
+/* The scrollbar's corner when both horizontal and vertical scrollbars are present */
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}
